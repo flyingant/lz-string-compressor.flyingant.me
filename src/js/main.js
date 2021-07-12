@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     shorterCountElement.innerHTML = `${shorterElement.value.length} characters`;
   });
   decompressBtnElement.addEventListener('click', () => {
-    longerElement.value = LZString.decompressFromEncodedURIComponent(shorterElement.value);
+    shorterElement.value = LZString.decompressFromEncodedURIComponent(longerElement.value);
     longerCountElement.innerHTML = `${longerElement.value.length} characters`;
     shorterCountElement.innerHTML = `${shorterElement.value.length} characters`;
   });

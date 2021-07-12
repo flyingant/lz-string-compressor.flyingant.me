@@ -19,13 +19,16 @@
           <li>
             A tool help to compress the longer string to shorter.
           </li>
+          <li>
+            Select the Compress or Decompress button to compress or decompress the text
+          </li>
         </ul>
       </div>
     </div>
     <hr class="container mb-4" />
     <div class="container flex flex-col p-4">
       <div class="w-full flex flex-col items-end">
-        <textarea class="textarea w-full border border-gray-200 outline-none p-2" id="longer" autofocus rows="8"></textarea>
+        <textarea class="textarea w-full border border-gray-200 outline-none p-2" id="longer" autofocus rows="8" placeholder="Original Text"></textarea>
         <small id="longer-count">0</small>
       </div>
       <div class="w-full flex flex-row mt-4 mb-4">
@@ -33,7 +36,7 @@
         <button id="decompress-btn" class="underline">Decompress</button>
       </div>
       <div class="w-full flex flex-col items-end">
-        <textarea class="textarea w-full border border-gray-200 outline-none text-xs p-2" rows="8" id="shorter"></textarea>
+        <textarea class="textarea w-full border border-gray-200 outline-none p-2" rows="8" id="shorter" disabled placeholder="Results"></textarea>
         <small id="shorter-count">0</small>
       </div>
     </div>
